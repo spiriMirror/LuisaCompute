@@ -95,6 +95,10 @@ luisa_compute_add_executable(test_pinned_mem test_pinned_mem.cpp)
 # XIR tests
 luisa_compute_add_executable(test_ast_to_xir test_ast_to_xir.cpp)
 
+# muda like
+luisa_compute_add_executable(test_muda_like test_muda_like.cpp)
+target_link_libraries(test_muda_like PRIVATE luisa-compute-muda)
+
 if (LUISA_COMPUTE_ENABLE_CLANG_CXX)
     luisa_compute_add_executable(clangcxx_compiler clangcxx_compiler.cpp)
     luisa_compute_add_executable(test_clang_cxx test_clang_cxx.cpp)

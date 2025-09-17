@@ -49,6 +49,7 @@ add_subdirectory(gui)
 add_subdirectory(backends)
 add_subdirectory(api)
 add_subdirectory(clangcxx)
+add_subdirectory(muda)
 
 add_library(compute INTERFACE)
 

@@ -30,6 +30,7 @@ if (CUDAToolkit_FOUND)
             cuda_swapchain.cpp cuda_swapchain.h
             cuda_callback_context.h
             cuda_builtin_embedded.cpp cuda_builtin_embedded.h
+            cuda_sparse_heap.cpp cuda_sparse_heap.h
             optix_api.cpp optix_api.h
             default_binary_io.cpp)
 

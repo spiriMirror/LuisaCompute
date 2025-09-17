@@ -43,6 +43,17 @@ LUISA_BINDING_GROUP(NestedArguments, args, image) {
     }
 };
 
+namespace muda {
+
+template<typename T>
+class BufferView {
+public:
+    luisa::compute::BufferView<T> view;
+    uint size;
+};
+
+}// namespace muda
+
 int main(int argc, char *argv[]) {
 
     log_level_verbose();
